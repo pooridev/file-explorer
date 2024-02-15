@@ -1,0 +1,20 @@
+.nodeWrapper {
+  .file {
+    margin-left: 20px !important;
+  }
+
+  .toggle {
+    all: unset;
+    cursor: pointer;
+    color: rgb(195, 195, 195);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .folder {
+    overflow: hidden;
+    margin-left: 15px;
+  }
+}
