@@ -1,20 +1,17 @@
 import { useState } from "react";
-
-import styles from "./style.module.css";
-import AnimateHeight from "../../AnimateHeight";
-import ChevronRight from "../../icons/ChevronRight";
-
 import { motion } from "framer-motion";
 import classNames from "classnames";
+
+import AnimateHeight from "../../AnimateHeight";
+import ChevronRight from "../../icons/ChevronRight";
+import { FileNodeType } from "..";
+
+import styles from "./style.module.css";
 
 type Height = number | "auto";
 
 interface Props {
-  fileNode: {
-    name: string;
-    id: number;
-    children?: Array<Props["fileNode"]>;
-  };
+  fileNode: FileNodeType;
 }
 
 const FileNode = ({ fileNode }: Props) => {

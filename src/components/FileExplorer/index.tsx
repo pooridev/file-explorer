@@ -2,14 +2,14 @@ import FileNode from "./FileNode";
 
 import styles from "./style.module.css";
 
-type FileSystem = {
+export type FileNodeType = {
   name: string;
   id: number;
-  children?: FileSystem;
-}[];
+  children?: FileNodeType[];
+};
 
 interface Props {
-  fileSystem: FileSystem;
+  fileSystem: FileNodeType[];
 }
 
 const FileExplorer = ({ fileSystem }: Props) => {

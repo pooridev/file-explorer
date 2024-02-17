@@ -1,10 +1,11 @@
-const getIndexFile = (additionalFiles = {}) => ({
+import { FileNodeType } from "../components/FileExplorer";
+
+const getIndexFile = (): Omit<FileNodeType, "children"> => ({
   name: "index.tsx",
   id: Math.random(),
-  ...additionalFiles,
 });
 
-export const fileSystem = [
+export const fileSystem: FileNodeType[] = [
   {
     name: "public",
     id: Math.random(),
